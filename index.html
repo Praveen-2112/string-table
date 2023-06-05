@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=divce-width,initial-scale=1.0">
+            <style>
+                table,th,td{
+                    border: 1px solid black;
+                    border-collapse:collapse;
+                    text-align: center;
+                }
+            </style>
+		</head>
+		<body>
+            <table>
+                <tr>
+                    <tr>
+                        <th>Method</th>
+                        <th>Working</th>
+                        <th>Example</th>
+                        <th>output</th>
+                    </tr>
+                    <tr>
+                        <td>length()</td>
+                        <td>calculate the length of string</td>
+                        <td>var a="abcdefg";<br>
+                            var b=a.length;<br>
+                            document.write(b);</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>slice()</td>
+                        <td>end of array element romeve one</td>
+                        <td>var a="praveen,banana,apple";<br>
+                             var b=a.slice(2,8);<br>
+                             document.write(b);</td>
+                        <td>aveen,</td>
+                    </tr>
+                    <tr>
+                        <td>substring()</td>
+                        <td>similar to slice but negative value in zero </td>
+                        <td>var a="vitrivel,vasanth,valli";<br>
+                            var b=a.substring(7,13);<br>
+                            document.write(b);
+
+                        </td>
+                        <td>l,vasa</td>
+                    </tr>
+                    <tr>
+                        <td>substr()</td>
+                        <td>similar to slice in array(index,position romeved element)</td>
+                        <td>var a="vitriyvel,vasanth,vali";<br>
+                             var b=a.substr(7,6);<br>
+                             document.write(b);
+                        </td>
+                        <td>el,vas</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">replace()</td>
+                        <td rowspan="3">replace all the character of thr original string with desired characters</td>
+                        <td>var a="please visit microsoft";<br>
+                             var b=a.replace("microsoft","software");<br>
+                             document.write(b)
+                        </td>
+                        <td>please visit software</td>
+                    </tr>
+                    <tr>
+                        <td>var a="please vist microsoft and microsoft";<br>
+                            var b=a.replace("microsoft/i","software");<br>
+                            document.write(b);
+
+                        </td>
+                        <td>please vist microsoft and microsoft</td>
+                    </tr>
+                    <tr>
+                        <td> var a="please vist microsoft and microsoft";<br>
+                            var b=a.replace(/microsoft/g,"software");<br>
+                            document.write(b);
+                        </td>
+                        <td>please vist software and software</td>
+                    </tr>
+                    <tr>
+                        <td>replace all()</td>
+                        <td>replace all character in element</td>
+                        <td> var a="The number is mobile number";<br>
+                            var b=a.replaceAll("number","No");<br>
+                           document.write(b);
+                        </td>
+                        <td>The No is mobile No</td>
+                    </tr>
+                    <tr>
+                        <td>toUpercase()</td>
+                        <td>Change tha all character toUpercase</td>
+                        <td>var a="praveen";<br>
+                            var b=a.toUpperCase();<br>
+                            document.write(b);
+                        </td>
+                        <td>PRAVEEN</td>>
+                    </tr>
+                    <tr>
+                        <td>toLowerCase()</td>
+                        <td>Change all character to lowercase</td>
+                        <td>var a="PRAVEEN";<br>
+                            var b=a.toLowerCase();<br>
+                            document.write(b);
+                        </td>
+                        <td>praveen</td>
+
+                    </tr>
+                    <tr>
+                        <td>concat()</td>
+                        <td>combines string character</td>
+                        <td>var a="Hello";<br>
+                            var b="world";<br>
+                            var c=a.concat(" ",b);<br>
+                           document.write(c);
+                        </td>
+                        <td>Hello world</td>>
+                    </tr>
+                    <tr>
+                        <td>trim()</td>
+                        <td>time the space at start end of the string and not in between</td>
+                        <td>var a="       Hello world!     ";<br>
+                            var b=a.trim();<br>
+                             document.write(b);
+                        </td>
+                        <td>Hello world!</td>>
+                    </tr>
+                    <tr>
+                        <td>trimStart()</td>
+                        <td>time the space at start of the string and not in between and end</td>
+                        <td>var a="     hello world      ";<br>
+                            var b=a.trimStart();<br>
+                            document.write(b);
+                        </td>
+                        <td>hello world</td>>
+                    </tr>
+                    <tr>
+                        <td>trimEnd()</td>
+                        <td>time the space at end of startand not in between and end</td>
+                        <td>var a="      hello world      ";<br>
+                            var b=a.trimEnd();<br>
+                            document.write(b);
+                        </td>
+                        <td>hello world</td>>
+                    </tr>
+                    <tr>
+                        <td>padStart()</td>
+                        <td>Change the string into desired length by adding character at the start</td>
+                        <td>var a="5";<br>
+                            var b=a.padStart(4,"0");<br>
+                            document.write(b);
+                        </td>
+                        <td>0005</td>>
+                    </tr>
+                    <tr>
+                        <td>padEnd()</td>
+                        <td>Change the string into desired length by adding character at the end</td>
+                        <td>var a="5";<br>
+                            var b=a.padStart("0",3);<br>
+                            document.write(b);
+                        </td>
+                        <td>5</td>>
+                    </tr>
+                    <tr>
+                        <td>charAt()</td>
+                        <td>return the character at the spexified index (returns empty if negative or unpresent index id given)</td>
+                        <td>var a="praveen";<br>
+                            var b=a.charAt(3);<br>
+                            document.write(b);
+                        </td>
+                        <td>v</td>>
+                    </tr>
+                    <tr>
+                        <td>char code At()</td>
+                        <td>return the unicode of character at the spexified index (returns empty if negative or unpresent index id given)</td>
+                        <td>var a="praveen";<br>
+                            var b=a.charCodeAt(3);<br>
+                            document.write(b);
+                        </td>
+                        <td>116</td>>
+                    </tr>
+                    <tr>
+                        <td>split()</td>
+                        <td>coverts string into arrays</td>
+                        <td>var a="praveen";<br>
+                            var b=a.split("");<br>
+                            document.write(b);
+                        </td>
+                        <td>p</td>>
+                    </tr>
+                </tr>
+            </table>
+			<script src="js/main.js">
+				
+			</script>
+		</body>
+	</html>
